@@ -1,0 +1,43 @@
+/**
+ * @license
+ * Copyright (c) 2024 Ruslan Abbas Al Faraui
+ * SPDX-License-Identifier: MIT
+ */
+
+html, body, canvas {
+    margin: 0;
+    padding: 0;
+}
+#val {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    margin: 2px;
+    color: white;
+    width: 500px;
+}
+#v {
+    position: absolute;
+    left: 0;
+}
+#w {
+    position: absolute;
+    left: 20%;
+}
+#x {
+    position: absolute;
+    left: 40%;
+}
+#y {
+    position: absolute;
+    left: 60%;
+}
+#z {
+    position: absolute;
+    left: 80%;
+}
+canvas {
+    float: left;
+}
