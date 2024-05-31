@@ -120,19 +120,19 @@ function reset_azimuth() {
 }
 
 
-// Object3D.rotateOnAxis( new THREE.Vector3(1,0,0), angleX );
-// Object3D.rotateOnWorldAxis( new THREE.Vector3(0,0,1), angleZ );
-//
-// let roll  = Math.atan2(ax, Math.sqrt(ay*ay + az*az));
-// let pitch = Math.atan2(ay, Math.sqrt(ax*ax + az*az));
-//
-// cube.rotation.y = normalize_angle(az, roll);
-// cube.rotation.x = normalize_angle(az, -pitch);
-//
-// function normalize_angle(az, ang) {
-//   if (az > 0) {
-//     if (ang > 0) return Math.PI*2 - ang;
-//     else return -ang;
-//   }
-//   else return Math.PI + ang;
-// }
+Object3D.rotateOnAxis( new THREE.Vector3(1,0,0), angleX );
+Object3D.rotateOnWorldAxis( new THREE.Vector3(0,0,1), angleZ );
+
+let roll  = Math.atan2(ax, Math.sqrt(ay*ay + az*az));
+let pitch = Math.atan2(ay, Math.sqrt(ax*ax + az*az));
+
+cube.rotation.y = normalize_angle(az, roll);
+cube.rotation.x = normalize_angle(az, -pitch);
+
+function normalize_angle(az, ang) {
+  if (az > 0) {
+    if (ang > 0) return Math.PI*2 - ang;
+      else return -ang;
+  }
+  else return Math.PI + ang;
+}
