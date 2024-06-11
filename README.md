@@ -6,12 +6,12 @@ Files `three.js` and `stats.js` were not written by me and are provided as given
 The project is abandoned for more than 2 years and there is no intentions of resuming work on it.
 
 ## Installation
-```sh
+```bash
 git clone https://github.com/faraui/three.js-web-vr
 cd three.js-web-vr
 ```
 
 ## Launch
-```sh
+```bash
 firefox index.html || chromium-browser index.html
 ```
