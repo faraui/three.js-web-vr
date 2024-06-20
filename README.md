@@ -13,5 +13,5 @@ cd three.js-web-vr
 
 ## Launch
 ```bash
-firefox index.html || chromium-browser index.html
+firefox index.html
 ```
